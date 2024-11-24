@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif, Arial;
+    background-color: #f7f9fb;
+    color: #333;
+}
+
+.main-container {
+    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.input-field input {
+    width: 70%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 50px 0px 0px 50px;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus */
+.input-field input:focus {
+    border-color: #3099e0;
+}
+
+.input-field button {
+    padding: 15px 25px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-left: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 0px 50px 50px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-field button:hover {
+    background-color: #2980b9;
+}
+
+#answer {
+    text-align: center;
+}
+
+#answer img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Loading animationen er med hjælp fra ChatGPT */
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+#loading p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+
